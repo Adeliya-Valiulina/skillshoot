@@ -1,0 +1,127 @@
+.main
+  background-color: $primary
+  &-wrapper
+    padding-top: 48px
+    display: flex
+    color: #fff
+    justify-content: space-between
+  &-info
+  &-title
+    font-size: 60px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    max-width: 620px
+    margin-bottom: 20px
+  &-text
+    color: rgba(255, 255, 255, 0.60)
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: 35px
+    max-width: 470px
+    margin: 0
+    margin-bottom: 40px
+
+  &-buttons
+    display: flex
+    align-items: center
+  &-button
+    padding: 12px 25px
+    border: 0
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    color: #fff
+    background-color: $secondary
+    cursor: pointer
+    border-radius: 4px
+    margin-right: 20px
+  &-link
+    display: inline-block
+    width: 30px
+    height: 30px
+    margin-right: 15px
+  &-photo
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 53px
+      left: 9px
+      width: 66px
+      height: 66px
+      background-image: url(../img/bxs-pencil.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 140px
+      right: 50px
+      width: 50px
+      height: 50px
+      background-image: url(../img/bxs-video.svg)
+      background-repeat: no-repeat
+    &__teacher
+      height: 100%
+  &-join
+    position: absolute
+    bottom: 200px
+    right: 290px
+    padding: 13px 16px
+    display: flex
+    height: 110px
+    align-items: flex-start
+    border-radius: 12px
+    background-color: #fff
+  &-description
+
+  &__text
+    color: #2C2C2C
+    font-size: 12px
+    font-style: normal
+    font-weight: 600
+    width: 146px
+    margin-bottom: 5px
+    font-family: Poppins
+
+  &-date
+
+    color: rgba(44, 44, 44, 0.70)
+    font-size: 10px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    margin-bottom: 15px
+    font-family: Poppins
+
+  &-avatar
+    border-radius: 40px
+    margin-right: 10px
+.join
+  &-button
+    padding: 6px 23px
+    font-size: 12px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: #fff
+    border-radius: 6px
+    background-color: #FF4F8E
+    font-family: Poppins
+
+.btn
+  &-text
+    margin-right: 15px
+.after
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: -80px
+    right: -400px
+    width: 55px
+    height: 55px
+    background-image: url(../img/bxs-calendar.svg)
+    background-repeat: no-repeat

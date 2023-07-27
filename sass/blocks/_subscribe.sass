@@ -1,0 +1,92 @@
+.subscribe
+  margin-bottom: 100px
+  &-wrapper
+    border-radius: 10px
+    background-color: #F2E7DB
+    display: flex
+    justify-content: space-between
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0px
+      left: 0px
+      width: 66px
+      height: 66px
+      background-image: url(../img/sub-element.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0px
+      right: 0px
+      width: 60px
+      height: 60px
+      background-image: url(../img/sub-element2.svg)
+      background-repeat: no-repeat
+  &-info
+    padding: 51px 0 51px 62px
+
+  &-title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: $body
+    width: 585px
+    margin-bottom: 30px
+  &-button
+    padding: 15px 25px
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    color: #fff
+    background-color: $primary
+    border-radius: 4px
+  &-photo
+    position: relative
+    &__img
+      position: absolute
+      bottom: 0
+      right: 125px
+.before
+  &-subscribe
+    &::before
+      content: ''
+      position: absolute
+      top: 82px
+      left: -450px
+      width: 66px
+      height: 66px
+      background-image: url(../img/icon1.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 82px
+      right: 54px
+      width: 66px
+      height: 66px
+      background-image: url(../img/icon2.svg)
+      background-repeat: no-repeat
+.after
+  &-subscribe
+    &::before
+      content: ''
+      position: absolute
+      bottom: -11px
+      left: -400px
+      width: 66px
+      height: 66px
+      background-image: url(../img/icon3-circle.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      bottom: 10px
+      right: 90px
+      width: 66px
+      height: 66px
+      background-image: url(../img/icon5.svg)
+      background-repeat: no-repeat
