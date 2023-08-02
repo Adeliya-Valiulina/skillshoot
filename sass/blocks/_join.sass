@@ -1,0 +1,49 @@
+.join
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    bottom: -27px
+    right: 621px
+    width: 53px
+    height: 46px
+    background-image: url(../img/cub-product.svg)
+    background-repeat: no-repeat
+    z-index: 2
+
+  &-wrapper
+    background-color: #F2E7DB
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 71px 67px
+    border-radius: 15px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0px
+      left: 0px
+      width: 66px
+      height: 66px
+      background-image: url(../img/sub-element.svg)
+      background-repeat: no-repeat
+  &-title
+    color: $body
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    width: 635px
+  &-btn
+    padding: 15px 25px
+    background-color: $secondary
+    color: #fff
+    border-radius: 4px
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    &--primary
+      background-color: $primary
+      margin-left: 15px

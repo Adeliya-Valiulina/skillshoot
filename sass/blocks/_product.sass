@@ -1,0 +1,170 @@
+.product
+  background-color: $primary
+  margin-bottom: 150px
+  padding: 75px 0 75px 0
+  &-wrapper
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-bottom: 50px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 53px
+      left: 75px
+      width: 53px
+      height: 46px
+      background-image: url(../img/cub-product.svg)
+      background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 35px
+      right: 100px
+      width: 24px
+      height: 24px
+      background-image: url(../img/circle-product.svg)
+      background-repeat: no-repeat
+
+  &-title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: #fff
+    text-align: center
+    margin-bottom: 10px
+  &-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 35px
+    color: rgba(255, 255, 255, 0.60)
+    text-align: center
+    max-width: 347px
+
+.swiper
+  &-wrapper
+  &-slide
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+    &__card
+      display: flex
+      flex-direction: column
+      max-width: 413px
+      background-color: #fff
+      border-radius: 15px
+      margin: 0 10px
+    &__image
+      width: 100%
+      height: 249px
+      border-radius: 15px 15px 0px 0px
+      object-fit: cover
+    &__subtitle
+      margin-top: 30px
+      font-size: 24px
+      font-style: normal
+      font-weight: 600
+      line-height: normal
+      color: $body
+      padding-left: 27px
+      padding-right: 27px
+      margin-bottom: 20px
+    &__info
+      display: flex
+      align-items: center
+      justify-content: start
+      padding-left: 27px
+      margin-bottom: 23px
+    &__left
+      display: flex
+      align-items: center
+      margin-right: 90px
+    &__description
+      display: flex
+      flex-direction: column
+    &__avatar
+      margin-right: 10px
+    &__username
+      font-size: 14px
+      font-style: normal
+      font-weight: 600
+      line-height: normal
+      color: $body
+    &__prof
+      font-size: 10px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $paragraf
+    &__right
+      display: flex
+    &__icon
+      margin-right: 10px
+    &__price
+      display: flex
+      padding: 18px 31px
+      align-items: center
+      justify-content: space-between
+      background-color: #fafafa
+      border-radius: 0 0 15px 15px
+    &__button
+      padding: 12px 25px
+      background-color: $primary
+      color: #fff
+      font-size: 12px
+      font-style: normal
+      font-weight: 600
+      line-height: 30px
+      border-radius: 10px
+    &__pricetag
+      font-size: 12px
+      font-style: normal
+      font-weight: 400
+      line-height: 30px
+      color: $paragraf
+.slider
+  &-wrapper
+    position: relative
+  &-button
+    position: absolute
+    top: 48%
+    width: 63px
+    height: 63px
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 50%
+    padding: 10px
+    background-color: #fff
+    cursor: pointer
+    z-index: 99
+    border: 7px solid #F5F5F5
+    overflow: hidden
+    &--prev
+      background-image: url(../img/arrow-prev.svg)
+      left: 0
+      transform: translateX(-50%)
+      &:hover
+        background-color: $primary
+        box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
+        background-image: url(../img/arrow-prev-click.svg)
+        transition: .3s
+    &--next
+      background-image: url(../img/arrow-next.svg)
+      right: 0
+      transform: translateX(50%)
+      &:hover
+        background-color: $primary
+        box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
+        background-image: url(../img/arrow-next-click.svg)
+        transition: .3s
+
+.strong
+  font-size: 24px
+  font-style: normal
+  font-weight: 600
+  line-height: normal
+  color: $body
