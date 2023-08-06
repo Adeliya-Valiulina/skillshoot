@@ -1,0 +1,95 @@
+.reviews
+  background-color: #F8F8F8
+  &__title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: $body
+    margin-bottom: 10px
+    text-align: center
+  &__text
+    font-family: Poppins
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 35px
+    color: $paragraf
+    margin-bottom: 50px
+    text-align: center
+.reviews
+  &-wrapper
+    padding: 87px 0
+  &-slider
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 413px
+      border-radius: 10px
+      margin-right: 20px
+      margin-bottom: 50px
+      &:hover
+        display: block
+        background-color: #fff
+        transition: .3s
+
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 50px 50px 16px 50px
+    &__avatar
+      margin-bottom: 15px
+      border-radius: 75px
+      width: 75px
+      height: 75px
+    &__rating
+      margin-bottom: 25px
+    &__username
+      font-size: 24px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $body
+      margin-bottom: 10px
+    &__txt
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 35px
+      color: $paragraf
+      text-align: center
+    &__button
+      bottom: 0
+      width: 63px
+      height: 63px
+      background-repeat: no-repeat
+      background-position: center
+      border-radius: 50%
+      padding: 10px
+      background-color: #fff
+      cursor: pointer
+      z-index: 99
+      border: 7px solid #F5F5F5
+      overflow: hidden
+      &--prev
+        background-image: url(../img/arrow-prev.svg)
+        transform: translateX(-25%)
+        &:hover
+          background-color: $secondary
+          box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
+          background-image: url(../img/arrow-prev-click.svg)
+          transition: .3s
+      &--next
+        background-image: url(../img/arrow-next.svg)
+        &:hover
+          background-color: $secondary
+          box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
+          background-image: url(../img/arrow-next-click.svg)
+          transition: .3s

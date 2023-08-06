@@ -1,0 +1,133 @@
+.price
+  margin-bottom: 100px
+  &-wrapper
+    display: flex
+    align-items: center
+    flex-direction: column
+  &-title
+    font-size: 36px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: $body
+    margin-bottom: 10px
+  &-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 35px
+    color: $paragraf
+    width: 545px
+    text-align: center
+    margin-bottom: 50px
+  &-group
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__wrap
+      display: flex
+      flex-direction: column
+      max-width: 292px
+      padding: 20px 20px 30px 30px
+      margin-top: 80px
+      &__color
+        background-color: $primary
+        color: #fff
+        position: relative
+        box-shadow: 0px 42px 34px 0px rgba(36, 93, 81, 0.30)
+        border-radius: 26px
+        margin-right: 50px
+        margin-left: 60px
+        margin-top: 0
+        &::after
+          content: url(../img/pro-elements.svg)
+          top: 0
+          right: -30px
+          position: absolute
+          background-repeat: no-repeat
+          background-position: right
+          opacity: 0.1
+          z-index: 1
+
+
+    &__pricetag
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 35px
+      color: $paragraf
+      &--color
+        color: #fff
+        margin-bottom: 20px
+    &__subtitle
+      font-size: 28px
+      font-style: normal
+      font-weight: 700
+      line-height: normal
+      color: $body
+      margin-bottom: 6px
+      &--color
+        color: #fff
+    &__desc
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 25px
+      margin-bottom: 15px
+      color: $paragraf
+      &--color
+        color: #fff
+    &__offer
+      text-align: right
+      font-size: 10px
+      font-style: normal
+      font-weight: 600
+      line-height: normal
+      letter-spacing: 0.833p
+      color: #fff
+      background-color: $secondary
+      padding: 7px 17px
+      width: 114px
+      margin-left: auto
+      border-radius: 13.5px
+      margin-bottom: 3px
+      z-index: 2
+
+  &-list
+    list-style-type: none
+    padding: 0
+    margin-bottom: 20px
+    &__item
+      background: url(../img/mark.svg)
+      background-repeat: no-repeat
+      padding-left: 35px
+      margin-bottom: 7px
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $body
+      &--color
+        color: #fff
+        background: url(../img/icon-pro.svg)
+        background-repeat: no-repeat
+  &-button
+    color: #FDC2A5
+    padding: 5px 52px
+    border-radius: 24px
+    background-color: #FFFAF8
+    font-size: 16px
+    font-style: normal
+    font-weight: 600
+    line-height: 35px
+    width: 90%
+    &:hover
+      box-shadow: 0px 20px 50px 0px rgba(203, 132, 97, 0.1)
+      transition: .3s
+    &--color
+      background-color: $secondary
+      color: #fff
+      &:hover
+        background-color: #C37B57
+        transition: .3s
+        box-shadow: none
