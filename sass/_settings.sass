@@ -2,6 +2,8 @@
   box-sizing: border-box
 body
   font-family: 'Poppins',sans-serif
+  overflow-y: scroll
+
 ::selection
   color: #FFB088
 .container
@@ -31,3 +33,12 @@ p
   color: $body
   &-color
     color: #fff
+ul
+  padding: 0
+
+.element
+  &-animation
+    opacity: 0
+.element-animation.element-show
+  opacity: 1
+  transition: opacity 0.5s

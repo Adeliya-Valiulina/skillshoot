@@ -1,0 +1,122 @@
+.lessons
+  margin-top: 50px
+  margin-bottom: 60px
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &-video
+    border-radius: 10px
+    height: 476px
+    overflow: hidden
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(180deg, rgba(36, 93, 81, 0.13) 0%, #245D51 100%)
+      z-index: 10
+    &__button
+      position: absolute
+      background: none
+      top: 197px
+      left: 382px
+      width: 83px
+      height: 83px
+      border-radius: 41.5px
+      z-index: 200
+    &__play
+      backdrop-filter: blur(5px)
+      border: 16px solid rgba(255, 255, 255, 0.22)
+      border-radius: 50%
+  &-item
+    display: flex
+    flex-direction: column
+    border-radius: 10px
+    background-color: #F5F5F5
+    position: relative
+    height: 478px
+    overflow: hidden
+
+  &-head
+    display: flex
+    align-items: flex-start
+    margin-left: 25px
+
+  &-subtitle
+    font-size: 20px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    color: $body
+    margin-left: 20px
+  &-list
+    list-style-type: none
+    padding: 0
+    margin: 0
+    margin-top: 30px
+    overflow: hidden
+    overflow-y: auto
+    scrollbar-width: thin
+    scrollbar-color: #245D51 #E5E5E5
+    scroll-behavior: smooth
+    scroll-snap-type: y
+  
+
+    &__item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      scroll-snap-align: center
+      margin-bottom: 20px
+      background-color: #fff
+      padding: 17px 22px
+      border-radius: 10px
+      min-width: 361px
+      margin-right: 15px
+      margin-left: 25px
+      margin-top: 25px
+
+      &--active
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.25)
+    &-list::-webkit-scrollbar-thumb
+      background: #bbbbbb
+      background: rgba(0, 0, 0, 0.15)
+      border-radius: 5px
+      height: 5px
+
+    &__link
+      display: flex
+      align-items: center
+      font-size: 18px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $body
+    &__name
+      margin-left: 15px
+    &__time
+      font-size: 14px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      color: $paragraf
+  &-button
+    width: 417px
+    padding: 21px 130px
+    border-radius: 10px
+    background-color: $primary
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    color: #fff
+  &-list::-webkit-scrollbar-thumb
+    background-color: blue
+    border-radius: 20px
+    border: 3px solid orange

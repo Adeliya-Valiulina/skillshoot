@@ -20,24 +20,27 @@
 .reviews
   &-wrapper
     padding: 87px 0
+  &-slide
+    width: 413px
+
   &-slider
     display: flex
     flex-wrap: wrap
     align-items: center
     justify-content: center
     overflow: hidden
+
     &__item
       display: flex
       flex-direction: column
       align-items: center
+      position: relative
       max-width: 413px
       border-radius: 10px
       margin-right: 20px
       margin-bottom: 50px
-      &:hover
-        display: block
-        background-color: #fff
-        transition: .3s
+      &::before
+        content: ''
 
     &__profile
       display: flex
@@ -80,7 +83,8 @@
       overflow: hidden
       &--prev
         background-image: url(../img/arrow-prev.svg)
-        transform: translateX(-25%)
+        transform: translateX(-15px)
+
         &:hover
           background-color: $secondary
           box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
@@ -88,8 +92,38 @@
           transition: .3s
       &--next
         background-image: url(../img/arrow-next.svg)
+        transform: translateX(20%)
+
+
         &:hover
           background-color: $secondary
           box-shadow: 7px 0px 20px 0px rgba(255, 255, 255, 0.15) inset
           background-image: url(../img/arrow-next-click.svg)
           transition: .3s
+.swiper
+  &-wrapper
+    display: flex
+    justify-content: space-between
+
+.buttons
+  &-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 147px
+
+.swiper
+  &-slide
+    &-active
+      background-color: #fff
+      height: 372px
+      &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        right: 0
+        border-radius: 10px
+        width: 100%
+        height: 6px
+        color: $primary
+        background-color: $primary

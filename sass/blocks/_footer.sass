@@ -1,0 +1,81 @@
+.footer
+  background-color: $primary
+  &-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 120px
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      top: 330px
+      left: 50px
+      width: 68px
+      height: 40px
+      background-image: url(../img/footer.svg)
+      background-repeat: no-repeat
+    &::after
+      position: absolute
+      content: ''
+      top: 220px
+      right: 90px
+      width: 81px
+      height: 81px
+      background-image: url(../img/footer2.svg)
+      background-repeat: no-repeat
+  &-title
+    font-size: 36px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    color: #fff
+  &-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 35px
+    color: #fff
+    margin-bottom: 65px
+    opacity: 0.6
+  &__subscribe
+    height: 60px
+    overflow: hidden
+    margin-bottom: 150px
+  &__input
+    padding: 5px 30px 5px 30px
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 50px
+    border-radius: 5px
+    border: none
+    width: 380px
+    outline: 0
+    background: #396D62
+    margin-right: 15px
+    color: #fff
+    &::placeholder
+      font-size: 16px
+      font-style: normal
+      font-weight: 400
+      line-height: 50px
+      color: #fff
+  &__button
+    padding: 5px 25px
+    font-size: 18px
+    font-style: normal
+    font-weight: 500
+    line-height: 50px
+    letter-spacing: -0.5px
+    border-radius: 4px
+    background: #CC8663
+    color: rgba(255, 255, 255, 0.8)
+    &:hover
+      background-color: #C37B57
+      transition: .3s
+  &-nav
+    display: flex
+    justify-content: space-between
+    margin-bottom: 45px
+    width: 100%
